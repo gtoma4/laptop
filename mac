@@ -141,6 +141,8 @@ brew cask install atom #should work
 apm install linter
 apm install linter-eslint
 
+brew cask install google-chrome
+
 brew_install_or_upgrade 'rbenv'
 brew_install_or_upgrade 'ruby-build'
 
