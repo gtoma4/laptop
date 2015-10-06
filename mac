@@ -129,20 +129,27 @@ else
 fi
 
 fancy_echo "Updating Homebrew formulas ..."
-brew update
+brew update #Updates known formulas
 
+fancy_echo "Installing dev tools"
 brew_install_or_upgrade 'zsh'
-brew_install_or_upgrade 'git'
-#brew_install_or_upgrade 'vim'
-#brew_install_or_upgrade 'tmux'
-brew_install_or_upgrade 'node'
-brew install_or_upgrade 'caskroom/cask/brew-cask' #will work
-brew cask install atom #should work
+brew_install_or_upgrade 'git' # Installs git for future proofing and to allow access for git projects if someone needs something from GitHub
+brew_install_or_upgrade 'vim' # Installs vim so it's up to date, which it is not in default OSX install
+brew_install_or_upgrade 'node' # Also installs NPM
+brew install_or_upgrade 'caskroom/cask/brew-cask' # Allows cask Installs
+
+#should work
+
+fancy_echo "Installing Atom and it's packages"
+brew cask install atom 
 apm install linter
 apm install linter-eslint
 
+fancy_echo "Installing browsers"
 brew cask install google-chrome
+brew cask install firefox
 
+fancy_echo "Installing and updating Ruby"
 brew_install_or_upgrade 'rbenv'
 brew_install_or_upgrade 'ruby-build'
 
