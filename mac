@@ -137,6 +137,7 @@ brew_install_or_upgrade 'git' # Installs git for future proofing and to allow ac
 brew_install_or_upgrade 'vim' # Installs vim so it's up to date, which it is not in default OSX install
 brew_install_or_upgrade 'node' # Also installs NPM
 brew install_or_upgrade 'caskroom/cask/brew-cask' # Allows cask Installs
+brew cask install mamp
 
 #should work
 
