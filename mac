@@ -94,7 +94,7 @@ brew update #Updates known formulas
 
 fancy_echo "Installing dev tools"
 brew_install_or_upgrade 'git' # Installs git for future proofing and to allow access for git projects if someone needs something from GitHub
-brew_install_or_upgrade 'vim' # Installs vim so it's up to date, which it is not in default OSX install
+#brew_install_or_upgrade 'vim' # Installs vim so it's up to date, which it is not in default OSX install
 brew_install_or_upgrade 'node' # Also installs NPM
 brew install caskroom/cask/brew-cask # Allows cask Installs
 brew cask install mamp
