@@ -9,6 +9,7 @@ based on what is already installed on the machine.
 
 Requirements
 ------------
+Must have Xcode installed.
 
 We support:
 
